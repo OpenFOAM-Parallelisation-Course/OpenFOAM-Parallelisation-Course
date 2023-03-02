@@ -21,7 +21,7 @@ Video content of the lecture parts is accessible only if you're logged in throug
 During the process of authenticating you for this end; your browser stores an access token and no personal
 information is collected except for your Github username which is echo'ed back to you on the User/login page.
 
-We also run Google analytics. The following information is collected:
+We also run a cookie-less analytics service ([Clicky](https://clicky.com)). The following information is collected:
 
 - __Page URL__. We track the page URL of each page view on this website. We use this to understand which pages have been viewed and how many times a particular page has been viewed.
 - __HTTP Referrer__. We use the referrer string to understand the number of visitors referred to this website from links on other sites. For example: _https://github.com/_.
