@@ -19,17 +19,17 @@ All activities during the workshop's hands-on sessions will be prepared as assig
 of offered activities/exercises.
 
 {{< alert icon="👉" >}}
-Each assignment will create a separate **private repository** for you at this [Github organisation](https://github.com/OpenFOAM-Parallelization-Workshop)
+Each assignment will create a separate **private repository** for you at this [Github organisation](https://github.com/OpenFOAM-Parallelisation-Course)
 {{< /alert >}}
 
 First, let's start by the introductory ones:
 
-{{< assignment-card "Git & Github Fundamentals" "https://classroom.github.com/a/e1pOgWdZ" "Optional" "btn-toggle" >}}
+{{< assignment-card "Git & Github Fundamentals" "https://classroom.github.com/a/etAdxF2O" "Optional" "btn-toggle" >}}
 A basic fast-paced course to get you familiarized with Git and Github in general - Provided by Github Classrooms. Please
 go through the README.md file after you accept this assignment if it's your first time using Git/Github.
 {{< /assignment-card >}}
 
-{{< assignment-card "Introducing foamUT to solve future exercises" "https://classroom.github.com/a/e1pOgWdZ" >}}
+{{< assignment-card "Introducing foamUT to solve future exercises" "#" >}}
 A basic exercise to get you familiarized with the recommended workflow of solving future exercises.
 It'll walk you through changing exercise code and making all of its tests pass in serial and parallel.
 {{< /assignment-card >}}
