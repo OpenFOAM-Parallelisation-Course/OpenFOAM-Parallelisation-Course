@@ -1,7 +1,7 @@
 {
 	"version": 3,
 	"file": "main.css",
-	"sourceRoot": "/home/runner/work/OpenFOAM-Parallelisation-Course/OpenFOAM-Parallelisation-Course",
+	"sourceRoot": "/home/runner/work/OpenFOAM-Parallelisation-Course.github.io/OpenFOAM-Parallelisation-Course.github.io",
 	"sources": [
 		"assets/scss/app.scss",
 		"node_modules/bootstrap/scss/_functions.scss",
