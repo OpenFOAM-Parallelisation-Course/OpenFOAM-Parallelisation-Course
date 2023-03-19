@@ -51,6 +51,12 @@
 #  weight = 20
 
 [[main]]
+  name = "Register"
+  weight = 4
+  identifier = "register"
+  url = "https://eveeno.com/parallelization_in_openfoam"
+
+[[main]]
   name = "User/Login"
   weight = 5
   identifier = "User"

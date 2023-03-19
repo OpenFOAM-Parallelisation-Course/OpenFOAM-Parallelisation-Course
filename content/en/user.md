@@ -12,7 +12,7 @@ layout: docs
 <p id="login-name"></p>
 
 <script type="text/javascript">
-document.getElementById("login-name").innerHTML = "Welcome! You first  need to <a href='https://github.com/login/oauth/authorize?client_id=Iv1.79320ea83712d6fc'>login</a> with your Github account.";
+document.getElementById("login-name").innerHTML = "Welcome! You first  need to <a href='https://github.com/login/oauth/authorize?client_id=Iv1.0419799268fa1f4f'>login</a> with your Github account.";
 
 function showProfile(data){
     //const profile_data = JSON.stringify(data);
@@ -44,21 +44,17 @@ function getAccessToken() {
         getProfile(access_token);
     }
 
-    const clientId = `Iv1.79320ea83712d6fc`;
+    const clientId = `Iv1.0419799268fa1f4f`;
     let code = window.location.search;
     code = code.replace("?code=", '');
+    localStorage.setItem("opcl-code", code);
 
-    fetch(`https://openfoam-parallelization-workshop-logger.onrender.com/${clientId}/${code}`)
+    fetch(`https://openfoam-parallelisation-course-logger.onrender.com/${clientId}/${code}`)
     .then(data => data.json())
     .then(data => getProfile(data.access_token))
     .catch(err => console.error(err));
 }
 
-function doWeHaveAccessToken(){
-    if(access_token = localStorage.getItem('access_token')){
-        getProfile(access_token);
-    }
-}
-document.addEventListener('DOMContentLoaded', getAccessToken());
-
+//document.addEventListener('DOMContentLoaded', getAccessToken());
+getAccessToken();
 </script>

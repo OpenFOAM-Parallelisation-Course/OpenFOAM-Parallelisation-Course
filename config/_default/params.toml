@@ -10,13 +10,13 @@ description = "A hands-on workshop for OpenFOAM programmers"
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["opw-logo.png"]
+images = ["NHR4CES-training.png"]
 ogLocale = "en_US"
-domainTLD = "openfoam-parallelization-workshop.netlify.app"
+domainTLD = "openfoam-parallelisation-course.github.io"
 titleHome = "OpenFOAM parallelization workshop"
 
 ## Twitter Cards
-twitterSite = "@openfoam-parallelization-workshop"
+twitterSite = "@openfoam-parallelisation-course"
 twitterCreator = ""
 
 ## JSON-LD
@@ -31,12 +31,12 @@ schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
 schemaLogoWidth = 500
 schemaLogoHeight = 500
-schemaImage = "doks.png"
-schemaImageWidth = 500
-schemaImageHeight = 500
+schemaImage = "NHR4CES-training.png"
+schemaImageWidth = 940
+schemaImageHeight = 788
 #schemaTwitter = "https://twitter.com/getdoks"
 schemaLinkedIn = "https://www.linkedin.com/company/nhr4ces/"
-schemaGitHub = ""
+schemaGitHub = "https://github.com/OpenFOAM-Parallelisation-Course"
 schemaSection = "blog"
 
 ## Sitelinks Search Box
@@ -65,7 +65,7 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-footer = "Supported by <a href='https://nhr4ces.de'>NHR4CES</a> - SDL Energy Conversion <br> Cookies are not used to collect anything. <br> Copyright (c) 2022-2023 Mohammed Elwardi Fadeli, based on <a href='https://getdoks.org/'>doks</a> with <a href='https://gohugo.io/'>Hugo</a>"
+footer = "Supported by <a href='https://nhr4ces.de'>NHR4CES</a> - SDL Energy Conversion <br> Cookies are not used to collect anything. Lectures were recorded using <a href='https://github.com/lectureStudio/lectureStudio'>lectureStudio</a> <br> Copyright (c) 2022-2023 Mohammed Elwardi Fadeli, based on <a href='https://getdoks.org/'>doks</a> with <a href='https://gohugo.io/'>Hugo</a>"
 
 # Feed
 copyRight = "Copyright (c) 2022-2023 Mohammed Elwardi Fadeli"
@@ -74,7 +74,7 @@ copyRight = "Copyright (c) 2022-2023 Mohammed Elwardi Fadeli"
 alert = true
 alertDismissable = true
 # alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\" target=\"_blank\" rel=\"noopener\">Check out Doks v0.2</a>"
-alertText = "Hands-on sessions will be hosted live. Please register at eveeno.com!"
+alertText = "Hands-on sessions will be hosted live. Please register at <a style='font-weight:bold;color:#8EA0FB;' href='https://eveeno.com/parallelization_in_openfoam'>eveeno.com</a>!"
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
@@ -106,7 +106,7 @@ lastMod = true
   fullWidth = true
   navbarSticky = true
   toTopButton = false
-  scrollSpy = false # experimental; needs Bootstrap >= 5.2.0-beta1
+  scrollSpy = true # experimental; needs Bootstrap >= 5.2.0-beta1
 
 [menu]
   [menu.section]

@@ -15,6 +15,7 @@ weight: 1
 toc: true
 lecture: true
 mermaid: true
+quiz: true
 url: "/workshop/prologue/prereqs"
 ---
 
@@ -65,3 +66,109 @@ flowchart LR
 - Knowledge of the common command line interface (Bash, Git) is recommended.
 - A Github Account (needed to view video content on this website).
 - An IDE (configured for C++ development) is optional but recommended (or use Github CodeSpaces).
+
+## A quick test
+
+{{< quizdown >}}
+
+---
+primary_color: cyan
+secondary_color: lightgray
+text_color: black
+shuffle_questions: false
+shuffle_answers: true
+---
+
+## Understanding of templated code
+
+Assume we have a templated function defined in a *.C file like this:
+```typescript
+template&#60;class T&#62;
+T::componentType globalMax(const T& v) {
+    return returnReduce(max(v),  maxOp&#60;T::componentType&#62;());
+}
+```
+
+How would use it on a `const volScalarField& vf;`?
+
+> Two answers are correct. max() is itself a templated function!
+
+- [x] `globalMax(vf)`
+- [ ] `globalMax<scalar>(vf)`
+- [x] `globalMax<volScalarField>(vf)`
+- [ ] Not usable
+
+## Basic object orientation
+
+Assume we have the following class declaration:
+
+```java
+class MyClass
+{
+    //- Data members
+    scalar m1_;
+public:
+    scalar m1() const {
+        return m1_;
+    }
+};
+```
+
+How would you access `m1` for reading outside of `MyClass` (Assume: `MyClass  obj;`)?
+
+> Pay attention to access specifiers
+
+- [ ] `obj.m1_`
+- [x] `obj.m1()`
+- [ ] Not easily possible
+
+## Basic object orientation
+
+Assume we have the following class declaration:
+
+```java
+class MyClass
+{
+    //- Data members
+    scalar m1_;
+public:
+    scalar m1() const {
+        return m1_;
+    }
+};
+```
+
+How would you access `m1` for writing outside of `MyClass` (Assume: `MyClass  obj;`)?
+
+> Pay attention to access specifiers
+
+- [ ] `obj.m1_`
+- [ ] `obj.m1()`
+- [x] Not easily possible
+
+## OpenFOAM compilation workflow
+
+Which of these environment variables you think are usually used as destinations for library/binary compilation
+when it comes to OpenFOAM shared libs and solvers?
+
+> Maybe the ones which end with *BIN?!
+
+- [x] `$FOAM_USER_LIBBIN`
+- [x] `$FOAM_LIBBIN`
+- [x] `$FOAM_APPBIN`
+- [ ] `$FOAM_APP`
+- [ ] `$WM_PROJECT`
+- [x] `$FOAM_USER_APPBIN`
+- [ ] `$FOAM_SITE_DIR`
+
+## OpenFOAM compilation workflow
+
+When you `wmake libso`, you're compiling your
+
+> The hint is in the command!
+
+- [ ] solver or utility binary
+- [x] library as a shared object
+- [ ] library as a static library
+
+{{< /quizdown >}}

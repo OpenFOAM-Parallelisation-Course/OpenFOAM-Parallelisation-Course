@@ -21,4 +21,11 @@ toc: true
   such questions, [cfd-online forums](https://www.cfd-online.com/Forums/openfoam/) and
   the [OpenFOAM Discord Server](https://discord.gg/P9p9eHn) are the right places to go to.
 
+---
+
+- Once you register at [eveeno.com](https://eveeno.com/parallelization_in_openfoam) for the workshop's event,
+  you can use the communication facilities there to contact instructors.
+
+---
+
 - It's possible to request certificates of attendance by dropping a mail to `{{< email user="holger-marschall" domain="tu-darmstadt.de" >}}`

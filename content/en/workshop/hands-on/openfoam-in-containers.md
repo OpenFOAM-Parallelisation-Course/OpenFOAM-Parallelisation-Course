@@ -39,10 +39,11 @@ start with is `~/data`.
 Refer to [Docker CLI cheatsheet](https://docs.docker.com/get-started/docker_cheatsheet.pdf) if it's your first time
 interacting with Docker.
 
+---
 
 At this point; I assume you have easy access to an OpenFOAM installation.
 
-0. [x] Register to the [Workshop's event]() and [login](/login) here with your Github account.
+0. [x] Register to the [Workshop's event]() and [login](/user) here with your Github account.
 1. [x] Set up a Text Editor or an IDE for OpenFOAM development.
 2. [x] Have a working OpenFOAM installation.
 2. [ ] Clone our unit-testing framework and make sure it works for you.

@@ -17,7 +17,6 @@ mermaid: true
 ---
 
 <div class="text-center">
-<a href="https://github.com/FoamScience/foamUT"><img src="https://github-link-card.s3.ap-northeast-1.amazonaws.com/FoamScience/foamUT.png" width="560px"></a>
 <div class="text-center" style="padding-left=-10px;">
 <img src="https://github.com/FoamScience/foamUT/blob/master/demo.gif?raw=true"/>
 </div>
@@ -47,9 +46,9 @@ flowchart TD
     end
     subgraph two[<b>Exercises repo</b>]
     subgraph dum2[ ]
-    B("exercises/exTest.C")
-    J("Make")
-    C[This is the file you modify]
+    B("exercises/*C")
+    J("exercises/Make")
+    C[This is the files you modify]
     D[Make dir. for your<br> OpenFOAM fork]
     end
     end
@@ -74,7 +73,11 @@ flowchart TD
 {{< /mermaid >}}
 
 
-In short, the `Alltest` script runs all unit tests found in [`tests`](https://github.com/FoamScience/foamUT/tree/master/tests) directory on all OpenFOAM cases found in [`cases`](https://github.com/FoamScience/foamUT/tree/master/cases) directory. So, to run your own tests:
+In short, the `Alltest` script runs all unit tests found in
+[`tests`](https://github.com/FoamScience/foamUT/tree/master/tests) directory on
+all OpenFOAM cases found in
+[`cases`](https://github.com/FoamScience/foamUT/tree/master/cases) directory.
+So, to run your own tests:
 
 ```bash
 # Clone the repos
@@ -84,7 +87,7 @@ git clone <Exercise-repo-URL> Ex01
 # Replace sample tests with the exercise code
 cd foamUT
 rm -rf tests/exampleTests
-ln -s $PWD/../Ex01/exercises tests/ex01
+ln -s $PWD/../Ex01/exercises $PWD/tests/ex01
 # Compile and run tests
 ./Alltest
 ```
@@ -107,9 +110,11 @@ sed -i 's/mpirun/mpirun --oversubscribe/g' Alltest
 Head out to [the wiki page](https://github.com/FoamScience/foamUT/wiki) if you're interested in the Unit-testing framework.
 {{< /alert >}}
 
+---
+
 At this point, only one task remains:
 
-0. [x] Register to the [Workshop's event]() and [login](/login) here with your Github account.
+0. [x] Register to the [Workshop's event]() and [login](/user) here with your Github account.
 1. [x] Set up a Text Editor or an IDE for OpenFOAM development.
 2. [x] Have a working OpenFOAM installation.
 2. [x] Clone our unit-testing framework and make sure it works for you.
