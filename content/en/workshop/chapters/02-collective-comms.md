@@ -1,7 +1,7 @@
 ---
 title: "Collective communications - general introdution"
-description: ""
-lead: ""
+description: "Introducing MPI group-wide communication: collective protocols."
+lead: "Introducing MPI group-wide communication: collective protocols."
 date: 2022-01-25T14:41:39+01:00
 lastmod: 2022-01-25T14:41:39+01:00
 draft: false
@@ -15,4 +15,7 @@ weight: 105
 toc: true
 lecture: true
 ---
+
+<script type="text/javascript" src="/js/lock.js"></script>
+{{< placeholder >}}
 

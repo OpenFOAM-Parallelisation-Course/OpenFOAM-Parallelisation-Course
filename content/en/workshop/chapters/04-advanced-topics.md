@@ -1,7 +1,7 @@
 ---
 title: "Application examples and advanced topics"
-description: ""
-lead: ""
+description: "Sneaking into real-world applications of parallel communication in OpenFOAM"
+lead: "Sneaking into real-world applications of parallel communication in OpenFOAM"
 date: 2022-01-25T14:41:39+01:00
 lastmod: 2022-01-25T14:41:39+01:00
 draft: false
@@ -16,3 +16,5 @@ toc: true
 lecture: true
 ---
 
+<script type="text/javascript" src="/js/lock.js"></script>
+{{< placeholder >}}

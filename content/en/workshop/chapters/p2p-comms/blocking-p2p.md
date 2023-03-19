@@ -1,7 +1,7 @@
 ---
 title: "Blocking P2P comms"
-description: ""
-lead: ""
+description: "Blocking point-to-point communication in OpenFOAM: The safest option for code correctness, but it might not be that efficient!"
+lead: "Blocking point-to-point communication in OpenFOAM: The safest option for code correctness, but it might not be that efficient!"
 date: 2022-01-25T14:41:39+01:00
 lastmod: 2022-01-25T14:41:39+01:00
 draft: false
@@ -16,4 +16,7 @@ toc: true
 lecture: true
 url: "/workshop/chapters/p2p-comms-blocking/"
 ---
+
+<script type="text/javascript" src="/js/lock.js"></script>
+{{< placeholder >}}
 
