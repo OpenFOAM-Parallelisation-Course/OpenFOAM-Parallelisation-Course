@@ -46,41 +46,8 @@ At this point, you've completed all preparation tasks and you're ready for the h
 
 ## Introductory activities
 
-{{< assignment-card "Activity 01: Blocking P2P Comms - A first look" "https://classroom.github.com/a/l5LX1WJK" >}}
-Explore how to do basic blocking P2P communication by collecting a list of values from all processes on the master
-process.
-{{< /assignment-card >}}
-
-{{< assignment-card "Activity 02: Collective Comms - A first look" "https://classroom.github.com/a/6SrE_GYg" >}}
-Understand the concepts away of the complexity of OpenFOAM code; by checking from prime numbers!
-{{< /assignment-card >}}
-
-{{< assignment-card "Activity 03: Blocking P2P Comms are not good for your health" "https://classroom.github.com/a/80kgkuI2" >}}
-Identify deadlocking when you see it; and try to fix the code.
-{{< /assignment-card >}}
-
-{{< assignment-card "Activity 04: Non-Blocking P2P comms for swapping operations" "https://classroom.github.com/a/hOHbIyDQ" >}}
-Process-to-neighbour communication made easy! Send data over processor boundaries.
-{{< /assignment-card >}}
-
-{{< assignment-card "Activity 05: Collective comms - Reference cells" "https://classroom.github.com/a/ySuEzsEK" >}}
-Which processor has the reference cell? Not really that important, but nice to know!
-{{< /assignment-card >}}
-
-{{< assignment-card "Activity 06: Parallel comms for custom data types" "https://classroom.github.com/a/kWTwrahL" >}}
-Introducing how to send lists of custom data objects which fit into random-access lists.
-{{< /assignment-card >}}
-
-{{< assignment-card "Activity 07: Special comms for custom data types" "https://classroom.github.com/a/OI4GWWEy" >}}
-Advanced communication with custom types which have references as data members with the help of linked lists.
-{{< /assignment-card >}}
+{{< placeholder >}} 
 
 ## Tiny projects
 
-{{< assignment-card "Project 01: Parallelizing a coded fvOptions source" "https://classroom.github.com/a/jad3TjtJ" >}}
-Apply a lot of what you learned in this workshop in a real-world setup. From the ground up; your task is to figure out what's
-wrong and fix it in your own way!
-
-Note that is a group project, up to 3 people can collaborate to work on this thing.
-{{< /assignment-card >}}
-
+{{< placeholder >}} 
