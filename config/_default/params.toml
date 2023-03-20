@@ -10,7 +10,7 @@ description = "A hands-on workshop for OpenFOAM programmers"
 # docsVersion = "0.3"
 
 ## Open Graph
-images = ["NHR4CES-training.png"]
+images = ["images/NHR4CES-training.png"]
 ogLocale = "en_US"
 domainTLD = "openfoam-parallelisation-course.github.io"
 titleHome = "OpenFOAM parallelization workshop"
@@ -31,7 +31,7 @@ schemaLocale = "en-US"
 schemaLogo = "logo-doks.png"
 schemaLogoWidth = 500
 schemaLogoHeight = 500
-schemaImage = "NHR4CES-training.png"
+schemaImage = "images/NHR4CES-training.png"
 schemaImageWidth = 940
 schemaImageHeight = 788
 #schemaTwitter = "https://twitter.com/getdoks"
