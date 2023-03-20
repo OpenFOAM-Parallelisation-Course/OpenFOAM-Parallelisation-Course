@@ -94,8 +94,8 @@ How would you use it on a `const volScalarField& vf;`?
 > Two answers are correct. max() is itself a templated function!
 
 - [x] `globalMax(vf)`
-- [ ] `globalMax<scalar>(vf)`
-- [x] `globalMax<volScalarField>(vf)`
+- [ ] `globalMax&#60;scalar&#62;(vf)`
+- [x] `globalMax&#60;volScalarField&#62;(vf)`
 - [ ] Not usable
 
 ## Basic object orientation
