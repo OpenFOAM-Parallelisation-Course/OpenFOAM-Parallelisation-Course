@@ -46,8 +46,8 @@ At this point, you've completed all preparation tasks and you're ready for the h
 
 ## Introductory activities
 
-{{< placeholder >}} 
+{{< placeholder date="13th of April 2023" >}}
 
 ## Tiny projects
 
-{{< placeholder >}} 
+{{< placeholder date="13th of April 2023" >}}

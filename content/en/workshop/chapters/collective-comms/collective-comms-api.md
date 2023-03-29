@@ -17,5 +17,4 @@ lecture: true
 url: "/workshop/chapters/collective-comms-api/"
 ---
 
-<script type="text/javascript" src="/js/lock.js"></script>
 {{< placeholder >}}

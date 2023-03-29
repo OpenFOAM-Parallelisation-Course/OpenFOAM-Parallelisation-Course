@@ -17,6 +17,5 @@ lecture: true
 url: "/workshop/chapters/p2p-comms-blocking/"
 ---
 
-<script type="text/javascript" src="/js/lock.js"></script>
 {{< placeholder >}}
 

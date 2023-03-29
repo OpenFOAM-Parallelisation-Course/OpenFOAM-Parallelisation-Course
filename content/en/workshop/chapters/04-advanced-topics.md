@@ -16,5 +16,4 @@ toc: true
 lecture: true
 ---
 
-<script type="text/javascript" src="/js/lock.js"></script>
 {{< placeholder >}}
