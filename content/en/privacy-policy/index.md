@@ -17,11 +17,7 @@ __TLDR__: We do use cookies to track site usage but we do not collect any person
 
 ### Information we collect and what we use it for
 
-Video content of the lecture parts is accessible only if you're logged in through your Github account.
-During the process of authenticating you for this end; your browser stores an access token and no personal
-information is collected except for your Github username which is echo'ed back to you on the User/login page.
-
-We also run a cookie-less analytics service ([Clicky](https://clicky.com)). The following information is collected:
+We run a cookie-less analytics service ([Clicky](https://clicky.com)). The following information is collected:
 
 - __Page URL__. We track the page URL of each page view on this website. We use this to understand which pages have been viewed and how many times a particular page has been viewed.
 - __HTTP Referrer__. We use the referrer string to understand the number of visitors referred to this website from links on other sites. For example: _https://github.com/_.

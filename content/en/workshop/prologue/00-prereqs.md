@@ -64,7 +64,7 @@ flowchart LR
 - An OpenFOAM installation on a recent Linux distribution (refer to [OpenFOAM Environment 101](/workshop/hands-on/openfoam-env-101/)
   for recommended setup).
 - Knowledge of the common command line interface (Bash, Git) is recommended.
-- A Github Account (needed to view video content on this website).
+- A Github Account (needed to get the source code of offered activities).
 - An IDE (configured for C++ development) is optional but recommended (or use Github CodeSpaces).
 
 ## A quick test

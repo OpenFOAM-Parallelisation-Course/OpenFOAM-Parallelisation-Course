@@ -57,12 +57,6 @@
   url = "https://eveeno.com/parallelization_in_openfoam"
 
 [[main]]
-  name = "User/Login"
-  weight = 5
-  identifier = "User"
-  url = "/user"
-
-[[main]]
   name = "Hands-on sessions"
   weight = 30
   identifier = "hands-on"

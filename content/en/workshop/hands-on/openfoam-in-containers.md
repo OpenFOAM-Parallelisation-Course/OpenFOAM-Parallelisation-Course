@@ -43,7 +43,7 @@ interacting with Docker.
 
 At this point; I assume you have easy access to an OpenFOAM installation.
 
-0. [x] Register to the [Workshop's event]() and [login](/user) here with your Github account.
+0. [x] Register to the [Workshop's event](https://eveeno.com/parallelization_in_openfoam)
 1. [x] Set up a Text Editor or an IDE for OpenFOAM development.
 2. [x] Have a working OpenFOAM installation.
 2. [ ] Clone our unit-testing framework and make sure it works for you.

@@ -74,7 +74,7 @@ copyRight = "Copyright (c) 2022-2023 Mohammed Elwardi Fadeli"
 alert = true
 alertDismissable = true
 # alertText = "Introducing the Doks child theme, several DX + UX updates, and more! <a class=\"alert-link stretched-link\" href=\"https://getdoks.org/blog/doks-v0.2/\" target=\"_blank\" rel=\"noopener\">Check out Doks v0.2</a>"
-alertText = "Hands-on sessions will be hosted live. Please register at <a style='font-weight:bold;color:#8EA0FB;' href='https://eveeno.com/parallelization_in_openfoam'>eveeno.com</a>!"
+alertText = "Hands-on sessions will be hosted on Zoom. This website is best viewed on wide screens. Please register at <a style='font-weight:bold;color:#8EA0FB;' href='https://eveeno.com/parallelization_in_openfoam'>eveeno.com</a>!"
 
 # Edit Page
 # repoHost [Github | Gitea | GitLab | Bitbucket | BitbucketServer ] is used for building the edit link based on git hoster
