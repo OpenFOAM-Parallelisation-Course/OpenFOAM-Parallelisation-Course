@@ -7,7 +7,7 @@ titleAddition = "Parallelization in OpenFOAM for HPC deployment"
 description = "A hands-on workshop for OpenFOAM programmers"
 
 ## Documentation
-# docsVersion = "0.3"
+docsVersion = "2023.1"
 
 ## Open Graph
 images = ["images/NHR4CES-training.png"]

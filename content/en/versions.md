@@ -10,25 +10,4 @@ layout: versions
 url: "/workshop/versions/"
 ---
 
-<div id='user'> </div>
-
-<script type="text/javascript">
-  async function onLoad() {
-    const res = await authorizerRef.authorize({
-      response_type: 'code',
-      use_refresh_token: false,
-    })
-    if (res && res.access_token) {
-      // you can use user information here, eg:
-      const user = await authorizerRef.getProfile({
-        Authorization: `Bearer ${res.access_token}`,
-      })
-      const userSection = document.getElementById('user')
-      const logoutSection = document.getElementById('logout-section')
-      logoutSection.classList.toggle('hide')
-      userSection.innerHTML = `Welcome, ${user.email}`
-    }
-  }
-  onLoad()
-</script>
-
+Only one version here
