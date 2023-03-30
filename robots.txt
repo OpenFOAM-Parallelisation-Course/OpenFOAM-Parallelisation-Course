@@ -1,4 +1,3 @@
 User-agent: *
-Disallow: /
-
+Allow: /
 Sitemap: https://openfoam-parallelisation-course.github.io/sitemap.xml
