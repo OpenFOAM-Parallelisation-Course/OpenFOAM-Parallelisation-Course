@@ -261,13 +261,6 @@ Source:
         description: "",
         content: ""
       },
-    {
-        id: 26,
-        href: "https://openfoam-parallelisation-course.github.io/workshop/chapters/send-custom-data/common-issues/",
-        title: "",
-        description: null,
-        content: ""
-      },
     ];
 
   // https://discourse.gohugo.io/t/range-length-or-last-element/3803/2
@@ -504,15 +497,6 @@ Source:
         id: 25,
         href: "/workshop/",
         title: "Docs",
-        description: "",
-        content: ""
-      }
-    );
-  index.add(
-      {
-        id: 26,
-        href: "/workshop/chapters/send-custom-data/common-issues/",
-        title: "",
         description: "",
         content: ""
       }
