@@ -118,7 +118,7 @@ Source:
         id: 5,
         href: "https://openfoam-parallelisation-course.github.io/workshop/prologue/",
         title: "Prologue",
-        description: "",
+        description: "Free access to few video presentations including agenda of the OpenFOAM parallel programming workshop",
         content: ""
       },
     {
@@ -153,7 +153,7 @@ Source:
         id: 10,
         href: "https://openfoam-parallelisation-course.github.io/workshop/chapters/collective-comms-api/",
         title: "Collective comms API",
-        description: "",
+        description: "Collective MPI communications as in OpenFOAM code: The most important API calls to do group-wide comms.",
         content: "\u003cdiv class=\"lecture-locked\"\u003e\u003c/div\u003e\n\u003cdiv class=\"lecture\"\u003e\n\u003cdiv class='card-bar'\u003e\u003c/div\u003e\n\u003cdiv class='card-body'\u003e\n    \u003ch3 class='h4 card-title'\u003e👋 This content will be available on the 3rd of April 2023\u003c/h3\u003e\n    \u003cform class='row gx-2 gy-3 email-form' method='post' name='newsletter' onsubmit='subscribeButton.disabled=!0'\u003e\u003cinput\n            type='hidden' name='form-name' value='newsletter'\u003e\n        \u003cdiv class='col-md-4'\u003e\u003ca id='loginButton'\n                href='https://eveeno.com/parallelization_in_openfoam'\n                class='btn btn-primary w-100'\u003eRegister at eveeno.com\u003c/a\u003e\u003c/div\u003e\n    \u003c/form\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\n"
       },
     {
@@ -167,7 +167,7 @@ Source:
         id: 12,
         href: "https://openfoam-parallelisation-course.github.io/workshop/chapters/03-send-custom-data/",
         title: "How do I send my own data?",
-        description: "",
+        description: "Beyond basic data types: Writing communication-ready classes for the MPI/OpenFOAM parallel programming workshop",
         content: "\u003cdiv class=\"lecture-locked\"\u003e\u003c/div\u003e\n\u003cdiv class=\"lecture\"\u003e\n\u003cdiv class='card-bar'\u003e\u003c/div\u003e\n\u003cdiv class='card-body'\u003e\n    \u003ch3 class='h4 card-title'\u003e👋 This content will be available on the 3rd of April 2023\u003c/h3\u003e\n    \u003cform class='row gx-2 gy-3 email-form' method='post' name='newsletter' onsubmit='subscribeButton.disabled=!0'\u003e\u003cinput\n            type='hidden' name='form-name' value='newsletter'\u003e\n        \u003cdiv class='col-md-4'\u003e\u003ca id='loginButton'\n                href='https://eveeno.com/parallelization_in_openfoam'\n                class='btn btn-primary w-100'\u003eRegister at eveeno.com\u003c/a\u003e\u003c/div\u003e\n    \u003c/form\u003e\n\u003c/div\u003e\n\u003c/div\u003e\n\n"
       },
     {
@@ -188,7 +188,7 @@ Source:
         id: 15,
         href: "https://openfoam-parallelisation-course.github.io/workshop/chapters/",
         title: "Lecture chapters",
-        description: "",
+        description: "The core content of the OpenFOAM parallel programming workshop on your own; you need to register to view this content.",
         content: ""
       },
     {
@@ -244,7 +244,7 @@ Source:
         id: 23,
         href: "https://openfoam-parallelisation-course.github.io/workshop/help/",
         title: "Help",
-        description: "",
+        description: "Help resources for when you go through the online content of the OpenFOAM parallel programming workshop on your own",
         content: ""
       },
     {
@@ -257,8 +257,8 @@ Source:
     {
         id: 25,
         href: "https://openfoam-parallelisation-course.github.io/workshop/",
-        title: "Docs",
-        description: "",
+        title: "Latest workshop content",
+        description: "Latest version of content for the OpenFOAM parallel programming workshop",
         content: ""
       },
     ];
@@ -317,7 +317,7 @@ Source:
         id: 5,
         href: "/workshop/prologue/",
         title: "Prologue",
-        description: "",
+        description: "Free access to few video presentations including agenda of the OpenFOAM parallel programming workshop",
         content: ""
       }
     );
@@ -362,7 +362,7 @@ Source:
         id: 10,
         href: "/workshop/chapters/collective-comms-api/",
         title: "Collective comms API",
-        description: " 👋 This content will be available on the 3rd of April 2023 Register at eveeno.com ",
+        description: "Collective MPI communications as in OpenFOAM code: The most important API calls to do group-wide comms.",
         content: " 👋 This content will be available on the 3rd of April 2023 Register at eveeno.com "
       }
     );
@@ -380,7 +380,7 @@ Source:
         id: 12,
         href: "/workshop/chapters/03-send-custom-data/",
         title: "How do I send my own data?",
-        description: " 👋 This content will be available on the 3rd of April 2023 Register at eveeno.com ",
+        description: "Beyond basic data types: Writing communication-ready classes for the MPI/OpenFOAM parallel programming workshop",
         content: " 👋 This content will be available on the 3rd of April 2023 Register at eveeno.com "
       }
     );
@@ -407,7 +407,7 @@ Source:
         id: 15,
         href: "/workshop/chapters/",
         title: "Lecture chapters",
-        description: "",
+        description: "The core content of the OpenFOAM parallel programming workshop on your own; you need to register to view this content.",
         content: ""
       }
     );
@@ -479,7 +479,7 @@ Source:
         id: 23,
         href: "/workshop/help/",
         title: "Help",
-        description: "",
+        description: "Help resources for when you go through the online content of the OpenFOAM parallel programming workshop on your own",
         content: ""
       }
     );
@@ -496,8 +496,8 @@ Source:
       {
         id: 25,
         href: "/workshop/",
-        title: "Docs",
-        description: "",
+        title: "Latest workshop content",
+        description: "Latest version of content for the OpenFOAM parallel programming workshop",
         content: ""
       }
     );
