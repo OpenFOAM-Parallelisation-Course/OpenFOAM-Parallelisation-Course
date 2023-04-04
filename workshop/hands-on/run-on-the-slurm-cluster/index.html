@@ -952,8 +952,20 @@ on your local machine is mounted to <code>/axc</code> on all cluster nodes. All 
 </span></span><span class="line"><span class="cl">docker <span class="nb">exec</span> -it axc-headnode bash
 </span></span><span class="line"><span class="cl"><span class="c1"># On the head node:</span>
 </span></span><span class="line"><span class="cl"><span class="o">(</span>axc-headnode<span class="o">)</span> <span class="nb">source</span> /usr/lib/openfoam/openfoam2206/etc/bashrc
-</span></span><span class="line"><span class="cl"><span class="o">(</span>axc-headnode<span class="o">)</span> <span class="nb">cd</span> /axc/foamUT/tests/exampleTests
-</span></span><span class="line"><span class="cl"><span class="o">(</span>axc-headnode<span class="o">)</span> wmake
+</span></span><span class="line"><span class="cl"><span class="o">(</span>axc-headnode<span class="o">)</span> <span class="nb">cd</span> /axc/foamUT
+</span></span><span class="line"><span class="cl"><span class="o">(</span>axc-headnode<span class="o">)</span> <span class="c1"># Install cmake v3.x</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>axc-headnode<span class="o">)</span> wget https://cmake.org/files/v3.12/cmake-3.12.3.tar.gz
+</span></span><span class="line"><span class="cl"><span class="o">(</span>axc-headnode<span class="o">)</span> tar zxvf cmake-3.*
+</span></span><span class="line"><span class="cl"><span class="o">(</span>axc-headnode<span class="o">)</span> <span class="nb">cd</span> cmake-3.*
+</span></span><span class="line"><span class="cl"><span class="o">(</span>axc-headnode<span class="o">)</span> ./bootstrap --prefix<span class="o">=</span>/usr/local
+</span></span><span class="line"><span class="cl"><span class="o">(</span>axc-headnode<span class="o">)</span> make -j<span class="k">$(</span>nproc<span class="k">)</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>axc-headnode<span class="o">)</span> make install
+</span></span><span class="line"><span class="cl"><span class="o">(</span>axc-headnode<span class="o">)</span> <span class="nb">cd</span> ..
+</span></span><span class="line"><span class="cl"><span class="o">(</span>axc-headnode<span class="o">)</span> <span class="nb">export</span> <span class="nv">FOAM_FOAMUT</span><span class="o">=</span><span class="nv">$PWD</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>axc-headnode<span class="o">)</span> sed -i <span class="s1">&#39;s_/lib_/lib64_g&#39;</span> tests/exampleTests/Make/options
+</span></span><span class="line"><span class="cl"><span class="o">(</span>axc-headnode<span class="o">)</span> ./Alltest
+</span></span><span class="line"><span class="cl"><span class="c1"># Subsequent compilations:</span>
+</span></span><span class="line"><span class="cl"><span class="o">(</span>axc-headnode<span class="o">)</span> <span class="nb">cd</span> tests/exampleTests <span class="o">&amp;&amp;</span> wmake
 </span></span></code></pre></div><p>The resulting binary (<code>/axc/foamUT/tests/exampleTests/testDriver</code>) also stays inside this shared directory,
 so compiling on one of the CentOS containers is enough (since they are identical).</p>
 <p>We&rsquo;ll also be using the cavity case provided with <code>foamUT</code> (you can do this on the head node):</p>
