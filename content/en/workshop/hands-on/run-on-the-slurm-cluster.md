@@ -123,8 +123,20 @@ git clone https://github.com/FoamScience/foamUT var/axc/foamUT
 docker exec -it axc-headnode bash
 # On the head node:
 (axc-headnode) source /usr/lib/openfoam/openfoam2206/etc/bashrc
-(axc-headnode) cd /axc/foamUT/tests/exampleTests
-(axc-headnode) wmake
+(axc-headnode) cd /axc/foamUT
+(axc-headnode) # Install cmake v3.x
+(axc-headnode) wget https://cmake.org/files/v3.12/cmake-3.12.3.tar.gz
+(axc-headnode) tar zxvf cmake-3.*
+(axc-headnode) cd cmake-3.*
+(axc-headnode) ./bootstrap --prefix=/usr/local
+(axc-headnode) make -j$(nproc)
+(axc-headnode) make install
+(axc-headnode) cd ..
+(axc-headnode) export FOAM_FOAMUT=$PWD
+(axc-headnode) sed -i 's_/lib_/lib64_g' tests/exampleTests/Make/options
+(axc-headnode) ./Alltest
+# Subsequent compilations:
+(axc-headnode) cd tests/exampleTests && wmake
 ```
 
 The resulting binary (`/axc/foamUT/tests/exampleTests/testDriver`) also stays inside this shared directory,
