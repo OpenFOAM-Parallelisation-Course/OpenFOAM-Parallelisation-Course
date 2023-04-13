@@ -44,7 +44,7 @@ At this point, you've completed all preparation tasks and you're ready for the h
 2. [x] Clone our unit-testing framework and make sure it works for you.
 3. [x] Solve a demo exercise so you get familiarized with the typical workflow during the hands-on sessions (You'll need no knowledge from the workshop for this).
 
-{{< downloads title="Description of all activities" url-name="Get activity descriptions" url="SDLEC-parallelization-workshop-hands-on-activities.pdf" >}}
+{{< downloads title="Description of all activities" url-name="Get activity descriptions" url="slides/SDLEC-parallelization-workshop-hands-on-activities.pdf" >}}
 
 ## Introductory activities
 
