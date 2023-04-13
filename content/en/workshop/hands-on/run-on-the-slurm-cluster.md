@@ -27,6 +27,11 @@ Docker containers instead of physical machines for convenience).
 
 <div class="card-bar"></div><br>
 
+{{< alert icon="👉" context="warning" >}}
+This works only on Linux machines as hosts (apparently). The Linux kernel is needed (Hence no BSD, no Darwin, no MacOS X
+unfortunately).
+{{< /alert >}}
+
 ## Get a makeshift cluster running
 
 First let's start with the requirements (Avoid distribution repositories for these):
