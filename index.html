@@ -145,8 +145,8 @@
 </head>
 
   <body class="home" data-bs-spy="scroll" data-bs-target="#toc" data-bs-root-margin="0px 0px -90%" data-bs-smooth-scroll="true" tabindex="0">
-    <div id="announcement" data-id="global-alert-f6fef105e0adda21fd067d65299ad640" class="alert alert-primary alert-dismissible fade show text-lg-center" role="alert">
-    Hands-on sessions will be hosted on Zoom. This website is best viewed on wide screens. Please register at <a style='font-weight:bold;color:#8EA0FB;' href='https://eveeno.com/parallelization_in_openfoam'>eveeno.com</a>!
+    <div id="announcement" data-id="global-alert-fca226946fca40742dd0c4d552031dc4" class="alert alert-primary alert-dismissible fade show text-lg-center" role="alert">
+    Hands-on sessions will be hosted on Zoom. This website is best viewed on wide screens. Please register at <a style='font-weight:bold;color:#8EA0FB;' href='https://eveeno.com/parallelization_in_openfoam_'>eveeno.com</a>!
     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
   </div>
 
@@ -242,34 +242,36 @@
       flowchart LR
           subgraph one[<b>First day</b>]
           subgraph dum1[ ]
-          A("03.04.2023 CET (2hrs)")
+          A("13.11.2023 CET (4hrs)")
           E[Lecture part<br>goes live on the website]
           F[Instructions for<br>environment setup]
+          G[Open Q&A session]
           end
           end
           subgraph two[<b>Second day</b>]
           subgraph dum2[ ]
-          B("13.04.2023 CET (5hrs from 10 AM)")
+          B("20.11.2023 CET (5hrs from 10 AM)")
           C[Lecture discussions]
           D[Hands-on sessions]
           end
           end
 
           Z((" "))
-          Y["Discuss lecture <br> questions on Discord"]
-      
-          C -.- B 
+          Y["Continuously discuss <br> lecture questions"]
+
+          C -.- B
           D -.- B
-      
+
           E -.- A
           F -.- A
+          G -.- A
           A === Z
           Z ==> B
           Z -.- Y
-      
+
           classDef Title fill:none,stroke:none;
           class dum1,dum2 Title
-      
+
           classDef graphDate fill-opacity:0.15,color:#E1B028
           classDef date fill-opacity:0.85,color:#FFFFFF,fill:#1d0e4e
           class one,two graphDate
@@ -283,6 +285,7 @@
             <br>
             <ul>
                 <li> The lecture part of the workshop (~2-hours) will be published online on the first day of the workshop.</li>
+                <li> An open Q&A session will also be hosted to discuss OpenMP and GPU programming.</li>
                 <li> On the second day, we'll hold a 5-hours hands-on session to go through exercises.</li>
                 <li> We'll organize a short session to discuss any questions about the published content if there is a need to.</li>
             </ul>

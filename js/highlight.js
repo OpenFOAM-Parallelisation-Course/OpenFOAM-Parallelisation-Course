@@ -155,7 +155,7 @@
           this.buffer += `<span class="${className}">`;
         }
       };
-      var TokenTree = class {
+      var TokenTree = class _TokenTree {
         constructor() {
           this.rootNode = { children: [] };
           this.stack = [this.rootNode];
@@ -222,7 +222,7 @@
             node.children = [node.children.join("")];
           } else {
             node.children.forEach((child) => {
-              TokenTree._collapse(child);
+              _TokenTree._collapse(child);
             });
           }
         }

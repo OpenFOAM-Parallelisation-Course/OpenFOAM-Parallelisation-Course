@@ -5,14 +5,16 @@
   var __getOwnPropNames = Object.getOwnPropertyNames;
   var __getProtoOf = Object.getPrototypeOf;
   var __hasOwnProp = Object.prototype.hasOwnProperty;
-  var __require = /* @__PURE__ */ ((x2) => typeof require !== "undefined" ? require : typeof Proxy !== "undefined" ? new Proxy(x2, {
-    get: (a, b) => (typeof require !== "undefined" ? require : a)[b]
-  }) : x2)(function(x2) {
-    if (typeof require !== "undefined")
-      return require.apply(this, arguments);
-    throw new Error('Dynamic require of "' + x2 + '" is not supported');
-  });
-  var __commonJS = (cb, mod) => function __require2() {
+  var __glob = (map4) => (path2) => {
+    var fn = map4[path2];
+    if (fn)
+      return fn();
+    throw new Error("Module not found in bundle: " + path2);
+  };
+  var __esm = (fn, res) => function __init() {
+    return fn && (res = (0, fn[__getOwnPropNames(fn)[0]])(fn = 0)), res;
+  };
+  var __commonJS = (cb, mod) => function __require() {
     return mod || (0, cb[__getOwnPropNames(cb)[0]])((mod = { exports: {} }).exports, mod), mod.exports;
   };
   var __export = (target, all) => {
@@ -36,9 +38,26 @@
     mod
   ));
 
+  // node_modules/moment-mini/locale/locale.js
+  var require_locale = __commonJS({
+    "node_modules/moment-mini/locale/locale.js"() {
+    }
+  });
+
+  // require("./locale/**/*") in node_modules/moment-mini/moment.min.js
+  var globRequire_locale;
+  var init_ = __esm({
+    'require("./locale/**/*") in node_modules/moment-mini/moment.min.js'() {
+      globRequire_locale = __glob({
+        "./locale/locale.js": () => require_locale()
+      });
+    }
+  });
+
   // node_modules/moment-mini/moment.min.js
   var require_moment_min = __commonJS({
     "node_modules/moment-mini/moment.min.js"(exports3, module3) {
+      init_();
       !function(e, t) {
         "object" == typeof exports3 && "undefined" != typeof module3 ? module3.exports = t() : "function" == typeof define && define.amd ? define(t) : e.moment = t();
       }(exports3, function() {
@@ -118,7 +137,7 @@
           return e3;
         }
         function q(e3) {
-          $(this, e3), this._d = new Date(null != e3._d ? e3._d.getTime() : NaN), this.isValid() || (this._d = new Date(NaN)), false === z && (z = true, f.updateOffset(this), z = false);
+          $(this, e3), this._d = new Date(null != e3._d ? e3._d.getTime() : NaN), this.isValid() || (this._d = /* @__PURE__ */ new Date(NaN)), false === z && (z = true, f.updateOffset(this), z = false);
         }
         function h(e3) {
           return e3 instanceof q || null != e3 && null != e3._isAMomentObject;
@@ -469,7 +488,7 @@
           var e3;
           if (void 0 === R[t4] && "undefined" != typeof module3 && module3 && module3.exports && null != t4.match("^[^/\\\\]*$"))
             try {
-              e3 = at._abbr, __require("./locale/" + t4), ct(e3);
+              e3 = at._abbr, globRequire_locale("./locale/" + t4), ct(e3);
             } catch (e4) {
               R[t4] = null;
             }
@@ -603,7 +622,7 @@
             !function(e4) {
               var t5, n3, s3, i3, r3, a2, o2 = false, u2 = e4._f.length;
               if (0 === u2)
-                return m(e4).invalidFormat = true, e4._d = new Date(NaN);
+                return m(e4).invalidFormat = true, e4._d = /* @__PURE__ */ new Date(NaN);
               for (i3 = 0; i3 < u2; i3++)
                 r3 = 0, a2 = false, t5 = $({}, e4), null != e4._useUTC && (t5._useUTC = e4._useUTC), t5._f = e4._f[i3], Tt(t5), A(t5) && (a2 = true), r3 = (r3 += m(t5).charsLeftOver) + 10 * m(t5).unusedTokens.length, m(t5).score = r3, o2 ? r3 < s3 && (s3 = r3, n3 = t5) : (null == s3 || r3 < s3 || a2) && (s3 = r3, n3 = t5, a2 && (o2 = true));
               E(e4, n3 || t5);
@@ -613,7 +632,7 @@
           else if (o(r2 = (i2 = e3)._i))
             i2._d = new Date(f.now());
           else
-            V(r2) ? i2._d = new Date(r2.valueOf()) : "string" == typeof r2 ? (n2 = i2, null !== (t4 = vt.exec(n2._i)) ? n2._d = new Date(+t4[1]) : (St(n2), false === n2._isValid && (delete n2._isValid, Ot(n2), false === n2._isValid && (delete n2._isValid, n2._strict ? n2._isValid = false : f.createFromInputFallback(n2))))) : a(r2) ? (i2._a = G(r2.slice(0), function(e4) {
+            V(r2) ? i2._d = new Date(r2.valueOf()) : "string" == typeof r2 ? (n2 = i2, null !== (t4 = vt.exec(n2._i)) ? n2._d = /* @__PURE__ */ new Date(+t4[1]) : (St(n2), false === n2._isValid && (delete n2._isValid, Ot(n2), false === n2._isValid && (delete n2._isValid, n2._strict ? n2._isValid = false : f.createFromInputFallback(n2))))) : a(r2) ? (i2._a = G(r2.slice(0), function(e4) {
               return parseInt(e4, 10);
             }), xt(i2)) : F(r2) ? (t4 = i2)._d || (s2 = void 0 === (n2 = ue(t4._i)).day ? n2.date : n2.day, t4._a = G([n2.year, n2.month, s2, n2.hour, n2.minute, n2.second, n2.millisecond], function(e4) {
               return e4 && parseInt(e4, 10);
@@ -628,7 +647,7 @@
           return Pt(e3, t4, n2, s2, false);
         }
         f.createFromInputFallback = e("value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.", function(e3) {
-          e3._d = new Date(e3._i + (e3._useUTC ? " UTC" : ""));
+          e3._d = /* @__PURE__ */ new Date(e3._i + (e3._useUTC ? " UTC" : ""));
         }), f.ISO_8601 = function() {
         }, f.RFC_2822 = function() {
         };
@@ -1424,7 +1443,7 @@
         }, f.max = function() {
           return Rt("isAfter", [].slice.call(arguments, 0));
         }, f.now = function() {
-          return Date.now ? Date.now() : +new Date();
+          return Date.now ? Date.now() : +/* @__PURE__ */ new Date();
         }, f.utc = l, f.unix = function(e3) {
           return W(1e3 * e3);
         }, f.months = function(e3, t4) {
@@ -4301,7 +4320,7 @@
 
   // node_modules/d3-interpolate/src/date.js
   function date_default(a, b) {
-    var d = new Date();
+    var d = /* @__PURE__ */ new Date();
     return a = +a, b = +b, function(t) {
       return d.setTime(a * (1 - t) + b * t), d;
     };
@@ -6053,14 +6072,14 @@
   }
 
   // node_modules/d3-time/src/interval.js
-  var t02 = new Date();
-  var t12 = new Date();
+  var t02 = /* @__PURE__ */ new Date();
+  var t12 = /* @__PURE__ */ new Date();
   function timeInterval(floori, offseti, count, field) {
     function interval2(date2) {
-      return floori(date2 = arguments.length === 0 ? new Date() : new Date(+date2)), date2;
+      return floori(date2 = arguments.length === 0 ? /* @__PURE__ */ new Date() : /* @__PURE__ */ new Date(+date2)), date2;
     }
     interval2.floor = (date2) => {
-      return floori(date2 = new Date(+date2)), date2;
+      return floori(date2 = /* @__PURE__ */ new Date(+date2)), date2;
     };
     interval2.ceil = (date2) => {
       return floori(date2 = new Date(date2 - 1)), offseti(date2, 1), floori(date2), date2;
@@ -6070,7 +6089,7 @@
       return date2 - d0 < d1 - date2 ? d0 : d1;
     };
     interval2.offset = (date2, step) => {
-      return offseti(date2 = new Date(+date2), step == null ? 1 : Math.floor(step)), date2;
+      return offseti(date2 = /* @__PURE__ */ new Date(+date2), step == null ? 1 : Math.floor(step)), date2;
     };
     interval2.range = (start3, stop, step) => {
       const range2 = [];
@@ -6080,7 +6099,7 @@
         return range2;
       let previous;
       do
-        range2.push(previous = new Date(+start3)), offseti(start3, step), floori(start3);
+        range2.push(previous = /* @__PURE__ */ new Date(+start3)), offseti(start3, step), floori(start3);
       while (previous < start3 && start3 < stop);
       return range2;
     };
@@ -6531,7 +6550,7 @@
       return function(date2) {
         var string = [], i = -1, j = 0, n = specifier.length, c2, pad2, format3;
         if (!(date2 instanceof Date))
-          date2 = new Date(+date2);
+          date2 = /* @__PURE__ */ new Date(+date2);
         while (++i < n) {
           if (specifier.charCodeAt(i) === 37) {
             string.push(specifier.slice(j, i));
@@ -6982,7 +7001,7 @@
     return new Date(t);
   }
   function number4(t) {
-    return t instanceof Date ? +t : +new Date(+t);
+    return t instanceof Date ? +t : +/* @__PURE__ */ new Date(+t);
   }
   function calendar(ticks2, tickInterval2, year, month, week, day, hour, minute, second2, format3) {
     var scale = continuous(), invert2 = scale.invert, domain = scale.domain;
@@ -15764,8 +15783,8 @@
       this.cScale9 = this.cScale9 || adjust_default(this.primaryColor, { h: 270 });
       this.cScale10 = this.cScale10 || adjust_default(this.primaryColor, { h: 300 });
       this.cScale11 = this.cScale11 || adjust_default(this.primaryColor, { h: 330 });
-      this["cScalePeer" + 1] = this["cScalePeer" + 1] || darken_default(this.secondaryColor, 45);
-      this["cScalePeer" + 2] = this["cScalePeer" + 2] || darken_default(this.tertiaryColor, 40);
+      this["cScalePeer1"] = this["cScalePeer1"] || darken_default(this.secondaryColor, 45);
+      this["cScalePeer2"] = this["cScalePeer2"] || darken_default(this.tertiaryColor, 40);
       for (let i = 0; i < this.THEME_COLOR_LIMIT; i++) {
         this["cScale" + i] = darken_default(this["cScale" + i], 10);
         this["cScalePeer" + i] = this["cScalePeer" + i] || darken_default(this["cScale" + i], 25);
@@ -16009,8 +16028,8 @@
       this.cScale9 = this.cScale9 || adjust_default(this.primaryColor, { h: 270 });
       this.cScale10 = this.cScale10 || adjust_default(this.primaryColor, { h: 300 });
       this.cScale11 = this.cScale11 || adjust_default(this.primaryColor, { h: 330 });
-      this["cScalePeer" + 1] = this["cScalePeer" + 1] || darken_default(this.secondaryColor, 45);
-      this["cScalePeer" + 2] = this["cScalePeer" + 2] || darken_default(this.tertiaryColor, 40);
+      this["cScalePeer1"] = this["cScalePeer1"] || darken_default(this.secondaryColor, 45);
+      this["cScalePeer2"] = this["cScalePeer2"] || darken_default(this.tertiaryColor, 40);
       for (let i = 0; i < this.THEME_COLOR_LIMIT; i++) {
         this["cScale" + i] = darken_default(this["cScale" + i], 10);
         this["cScalePeer" + i] = this["cScalePeer" + i] || darken_default(this["cScale" + i], 25);
@@ -22455,7 +22474,7 @@ g.stateGroup line {
             let r_y = 10 + bbox.width / 25 * 8.5;
             wrapper.attr(
               "transform",
-              "translate(" + r_x + ", " + r_y + ") rotate(" + -45 + ", " + pos + ", " + y2 + ")"
+              "translate(" + r_x + ", " + r_y + ") rotate(-45, " + pos + ", " + y2 + ")"
             );
           }
         }
@@ -22586,7 +22605,7 @@ g.stateGroup line {
         "transform",
         "translate(" + (-bbox.width - 14 - (gitGraphConfig.rotateCommitLabel === true ? 30 : 0)) + ", " + (pos - bbox.height / 2 - 1) + ")"
       );
-      bkg.attr("transform", "translate(" + -19 + ", " + (pos - bbox.height / 2) + ")");
+      bkg.attr("transform", "translate(-19, " + (pos - bbox.height / 2) + ")");
     });
   };
   var draw$f = function(txt, id2, ver, diagObj) {
@@ -27690,7 +27709,7 @@ g.stateGroup line {
     );
     select_default2(text).attr(
       "transform",
-      "translate( " + (bbox.width < titleBox.width ? 0 : -(titleBox.width - bbox.width) / 2) + ", " + 0 + ")"
+      "translate( " + (bbox.width < titleBox.width ? 0 : -(titleBox.width - bbox.width) / 2) + ", 0)"
     );
     bbox = label.node().getBBox();
     label.attr(
@@ -33394,7 +33413,7 @@ g.stateGroup line {
         }
       });
       if (!latestEndingTask) {
-        const dt = new Date();
+        const dt = /* @__PURE__ */ new Date();
         dt.setHours(0, 0, 0, 0);
         return dt;
       } else {
@@ -34150,7 +34169,7 @@ g.stateGroup line {
         return;
       }
       const todayG = svg2.append("g").attr("class", "today");
-      const today = new Date();
+      const today = /* @__PURE__ */ new Date();
       const todayLine = todayG.append("line");
       todayLine.attr("x1", timeScale(today) + theSidePad).attr("x2", timeScale(today) + theSidePad).attr("y1", conf2.titleTopMargin).attr("y2", h2 - conf2.titleTopMargin).attr("class", "today");
       if (todayMarker2 !== "") {
