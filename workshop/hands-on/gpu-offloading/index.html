@@ -15,17 +15,19 @@
   <meta name="robots" content="index, follow">
     <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
-  <title>A unit-testing framework to do the exercises - OpenFOAM Parallelization Workshop</title>
-<meta name="description" content="We&amp;rsquo;ll be using the unit-testing framework as a black-box to verify the correctness of your code in hands-on sessions. You only need to change one file per activity; Mostly Exercises are provided as test units for convenient interaction with the code (compile-run-debug cycles). Clone this repo and run Alltest using your local OpenFOAM installation to make sure everything works as expected. The following diagram depicts the general workflow of solving the exercises proposed during the hands-on sessions:">
-  <link rel="canonical" href="https://openfoam-parallelisation-course.github.io/workshop/hands-on/using-foamut/">
+  <title>GPU offloading with OpenMP - OpenFOAM Parallelization Workshop</title>
+<meta name="description" content="In this optional section, we&amp;rsquo;ll explore the use of GPUs with OpenFOAM and OpenMP.
+👉 This article is incomplete, and it only supports NVIDIA GPUs. Base benchmarks # The OpenMP-OpenFOAM-benchmarks repository provides a set of quick benchmarks to showcase the possible benefits of using OpenMP constructs on OpenFOAM loops. The test case is a simple computation pattern that is popular in meshless methods where a kernel function is usually used as a weight for a set of sample points to approximate a target value at a particular position.">
+  <link rel="canonical" href="https://openfoam-parallelisation-course.github.io/workshop/hands-on/gpu-offloading/">
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="A unit-testing framework to do the exercises">
-<meta property="og:description" content="We&rsquo;ll be using the unit-testing framework as a black-box to verify the correctness of your code in hands-on sessions. You only need to change one file per activity; Mostly Exercises are provided as test units for convenient interaction with the code (compile-run-debug cycles). Clone this repo and run Alltest using your local OpenFOAM installation to make sure everything works as expected. The following diagram depicts the general workflow of solving the exercises proposed during the hands-on sessions:">
-<meta property="og:url" content="https://openfoam-parallelisation-course.github.io/workshop/hands-on/using-foamut/">
+<meta property="og:title" content="GPU offloading with OpenMP">
+<meta property="og:description" content="In this optional section, we&rsquo;ll explore the use of GPUs with OpenFOAM and OpenMP.
+👉 This article is incomplete, and it only supports NVIDIA GPUs. Base benchmarks # The OpenMP-OpenFOAM-benchmarks repository provides a set of quick benchmarks to showcase the possible benefits of using OpenMP constructs on OpenFOAM loops. The test case is a simple computation pattern that is popular in meshless methods where a kernel function is usually used as a weight for a set of sample points to approximate a target value at a particular position.">
+<meta property="og:url" content="https://openfoam-parallelisation-course.github.io/workshop/hands-on/gpu-offloading/">
 <meta property="og:site_name" content="OpenFOAM Parallelization Workshop">
-<meta property="article:published_time" content="2022-01-25T14:41:39+01:00">
-  <meta property="article:modified_time" content="2022-01-25T14:41:39+01:00">
+<meta property="article:published_time" content="2023-11-12T14:41:39+01:00">
+  <meta property="article:modified_time" content="2023-11-12T14:41:39+01:00">
   
   <meta property="og:image" content="https://openfoam-parallelisation-course.github.io/images/NHR4CES-training.png"/>
       <meta property="og:image:alt" content="OpenFOAM Parallelization Workshop">
@@ -33,10 +35,10 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@openfoam-parallelisation-course">
 <meta name="twitter:creator" content="">
-<meta name="twitter:title" content="A unit-testing framework to do the exercises">
+<meta name="twitter:title" content="GPU offloading with OpenMP">
 <meta name="twitter:description" content="">
 <meta name="twitter:image" content="https://openfoam-parallelisation-course.github.io/images/NHR4CES-training.png">
-    <meta name="twitter:image:alt" content="A unit-testing framework to do the exercises">
+    <meta name="twitter:image:alt" content="GPU offloading with OpenMP">
 
 <script type="application/ld+json">
 {
@@ -75,9 +77,9 @@
       },
     {
       "@type": "WebPage",
-      "@id": "https://openfoam-parallelisation-course.github.io/workshop/hands-on/using-foamut/",
-      "url": "https://openfoam-parallelisation-course.github.io/workshop/hands-on/using-foamut/",
-      "name": "A unit-testing framework to do the exercises",
+      "@id": "https://openfoam-parallelisation-course.github.io/workshop/hands-on/gpu-offloading/",
+      "url": "https://openfoam-parallelisation-course.github.io/workshop/hands-on/gpu-offloading/",
+      "name": "GPU offloading with OpenMP",
       "description": "",
       "isPartOf": {
         "@id": "https://openfoam-parallelisation-course.github.io/#/schema/website/1"
@@ -85,22 +87,22 @@
       "about": {
           "@id": "https://openfoam-parallelisation-course.github.io/#/schema/organization/1"
         },
-      "datePublished": "2022-01-25T14:41:39CET",
-      "dateModified": "2022-01-25T14:41:39CET",
+      "datePublished": "2023-11-12T14:41:39CET",
+      "dateModified": "2023-11-12T14:41:39CET",
       "breadcrumb": {
-        "@id": "https://openfoam-parallelisation-course.github.io/workshop/hands-on/using-foamut/#/schema/breadcrumb/1"
+        "@id": "https://openfoam-parallelisation-course.github.io/workshop/hands-on/gpu-offloading/#/schema/breadcrumb/1"
       },
       "primaryImageOfPage": {
-        "@id": "https://openfoam-parallelisation-course.github.io/workshop/hands-on/using-foamut/#/schema/image/2"
+        "@id": "https://openfoam-parallelisation-course.github.io/workshop/hands-on/gpu-offloading/#/schema/image/2"
       },
       "inLanguage": "en-US",
       "potentialAction": [{
-        "@type": "ReadAction", "target": ["https://openfoam-parallelisation-course.github.io/workshop/hands-on/using-foamut/"]
+        "@type": "ReadAction", "target": ["https://openfoam-parallelisation-course.github.io/workshop/hands-on/gpu-offloading/"]
       }]
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://openfoam-parallelisation-course.github.io/workshop/hands-on/using-foamut/#/schema/breadcrumb/1",
+      "@id": "https://openfoam-parallelisation-course.github.io/workshop/hands-on/gpu-offloading/#/schema/breadcrumb/1",
       "name": "Breadcrumbs",
       "itemListElement": [{
         "@type": "ListItem",
@@ -133,7 +135,7 @@
         "@type": "ListItem",
         "position":  4 ,
         "item": {
-          "@id": "https://openfoam-parallelisation-course.github.io/workshop/hands-on/using-foamut/"
+          "@id": "https://openfoam-parallelisation-course.github.io/workshop/hands-on/gpu-offloading/"
           }
         }]
     },
@@ -143,10 +145,10 @@
       "@graph": [
         {
           "@type": "ImageObject",
-          "@id": "https://openfoam-parallelisation-course.github.io/workshop/hands-on/using-foamut/#/schema/image/2",
+          "@id": "https://openfoam-parallelisation-course.github.io/workshop/hands-on/gpu-offloading/#/schema/image/2",
           "url": "https://openfoam-parallelisation-course.github.io/images/NHR4CES-training.png",
           "contentUrl": "https://openfoam-parallelisation-course.github.io/images/NHR4CES-training.png",
-          "caption": "A unit-testing framework to do the exercises"
+          "caption": "GPU offloading with OpenMP"
         }
       ]
     }
@@ -317,7 +319,7 @@
             
               
                 
-                <li><a class="docs-link rounded active" href="/workshop/hands-on/using-foamut/">A unit-testing framework to do the exercises</a></li>
+                <li><a class="docs-link rounded" href="/workshop/hands-on/using-foamut/">A unit-testing framework to do the exercises</a></li>
               
             
               
@@ -332,7 +334,7 @@
             
               
                 
-                <li><a class="docs-link rounded" href="/workshop/hands-on/gpu-offloading/">GPU offloading with OpenMP</a></li>
+                <li><a class="docs-link rounded active" href="/workshop/hands-on/gpu-offloading/">GPU offloading with OpenMP</a></li>
               
             
           </ul>
@@ -556,7 +558,7 @@
             
               
                 
-                <li><a class="docs-link rounded active" href="/workshop/hands-on/using-foamut/">A unit-testing framework to do the exercises</a></li>
+                <li><a class="docs-link rounded" href="/workshop/hands-on/using-foamut/">A unit-testing framework to do the exercises</a></li>
               
             
               
@@ -571,7 +573,7 @@
             
               
                 
-                <li><a class="docs-link rounded" href="/workshop/hands-on/gpu-offloading/">GPU offloading with OpenMP</a></li>
+                <li><a class="docs-link rounded active" href="/workshop/hands-on/gpu-offloading/">GPU offloading with OpenMP</a></li>
               
             
           </ul>
@@ -731,7 +733,7 @@
             
               
                 
-                <li><a class="docs-link rounded active" href="/workshop/hands-on/using-foamut/">A unit-testing framework to do the exercises</a></li>
+                <li><a class="docs-link rounded" href="/workshop/hands-on/using-foamut/">A unit-testing framework to do the exercises</a></li>
               
             
               
@@ -746,7 +748,7 @@
             
               
                 
-                <li><a class="docs-link rounded" href="/workshop/hands-on/gpu-offloading/">GPU offloading with OpenMP</a></li>
+                <li><a class="docs-link rounded active" href="/workshop/hands-on/gpu-offloading/">GPU offloading with OpenMP</a></li>
               
             
           </ul>
@@ -781,7 +783,35 @@
 			</nav>
 		</div>
 		<nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation">
-			
+			<div class="d-xl-none">
+  <button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#onThisPage" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle On this page navigation">
+    <span>On this page</span>
+    <span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
+    </span>
+  </button>
+  <div class="collapse" id="onThisPage">
+    <div class="card card-body mt-3 py-1">
+      <div class="page-links">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#base-benchmarks">Base benchmarks</a></li>
+  </ol>
+</nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page-links d-none d-xl-block">
+  <h3>On this page</h3>
+  <nav id="toc">
+  <ol>
+    <li><a href="#base-benchmarks">Base benchmarks</a></li>
+  </ol>
+</nav>
+  </div>
+
 		</nav>
 		<main class="docs-content col-lg-11 col-xl">
 		
@@ -790,119 +820,80 @@
 						<li class="breadcrumb-item"><a href="/">Home</a></li>
 <li class="breadcrumb-item"><a href="/workshop/">Workshop</a></li>
 <li class="breadcrumb-item"><a href="/workshop/hands-on/">Hands-on sessions</a></li>
-<li class="breadcrumb-item active" aria-current="page">A unit-testing framework to do the exercises</li>
+<li class="breadcrumb-item active" aria-current="page">GPU offloading with OpenMP</li>
 					</ol>
 				</nav>
 			
-			<h1>A unit-testing framework to do the exercises</h1>
-			<p class="lead"></p>
+			<h1>GPU offloading with OpenMP</h1>
+			<p class="lead">A quick guide to outline the most important aspects of GPU offloading with OpenMP in OpenFOAM context.</p>
 			<nav class="d-xl-none" aria-label="Quaternary navigation">
-				
+				<div class="d-xl-none">
+  <button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#onThisPage" aria-controls="doks-docs-nav" aria-expanded="false" aria-label="Toggle On this page navigation">
+    <span>On this page</span>
+    <span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"></polyline><polyline points="7 6 12 11 17 6"></polyline></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"></polyline><polyline points="17 18 12 13 7 18"></polyline></svg>
+    </span>
+  </button>
+  <div class="collapse" id="onThisPage">
+    <div class="card card-body mt-3 py-1">
+      <div class="page-links">
+        <nav id="TableOfContents">
+  <ol>
+    <li><a href="#base-benchmarks">Base benchmarks</a></li>
+  </ol>
+</nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="page-links d-none d-xl-block">
+  <h3>On this page</h3>
+  <nav id="toc">
+  <ol>
+    <li><a href="#base-benchmarks">Base benchmarks</a></li>
+  </ol>
+</nav>
+  </div>
+
 			</nav>
-			<div class="text-center">
-<div class="text-center" style="padding-left=-10px;">
-<img src="https://github.com/FoamScience/foamUT/blob/master/demo.gif?raw=true"/>
-</div>
-</div>
-<br>
-<ul>
-<li>We&rsquo;ll be using the unit-testing framework as a black-box to verify the correctness of your code in hands-on sessions.
-<ul>
-<li>You only need to change one file per activity; Mostly</li>
-</ul>
-</li>
-<li>Exercises are provided as test units for convenient interaction with the code (compile-run-debug cycles).</li>
-<li>Clone <a href="https://github.com/FoamScience/foamUT">this repo</a> and run <a href="https://github.com/FoamScience/foamUT/blob/master/Alltest"><code>Alltest</code></a> using your local OpenFOAM installation to make sure everything works as expected.</li>
-</ul>
-<p>The following diagram depicts the general workflow of solving the exercises proposed during the hands-on sessions:</p>
-<div class="mermaid bg-light text-center">
-    
-%%{init: {&#39;theme&#39;:&#39;dark&#39;}}%%
-flowchart TD
-    subgraph one[&lt;b&gt;foamUT repo&lt;/b&gt;]
-    subgraph dum1[ ]
-    A(&#34;Alltest&#34;)
-    G(&#34;Catch2&#34;)
-    F[Compile and test&lt;br&gt;everything in tests&lt;br&gt;on cases]
-    H(&#34;tests&#34;)
-    I(&#34;cases&#34;)
-    E[Unit-tests backend]
-    end
-    end
-    subgraph two[&lt;b&gt;Exercises repo&lt;/b&gt;]
-    subgraph dum2[ ]
-    B(&#34;exercises/*C&#34;)
-    J(&#34;exercises/Make&#34;)
-    C[This is the files you modify]
-    D[Make dir. for your&lt;br&gt; OpenFOAM fork]
-    end
-    end
-
-    B ==&gt; |Symlink/Copy into tests| H
-    C -.- B 
-    D -.- J
-
-    G -.- E
-    A -.- F
-    A --&gt; G
-    F -.-&gt; H
-    F -.-&gt; I
-
-    classDef Title fill:none,stroke:none;
-    class dum1,dum2 Title
-
-    classDef graphDate fill-opacity:0.15,color:#E1B028
-    classDef date fill-opacity:0.85,color:#FFFFFF,fill:#1d0e4e
-    class one,two graphDate
-    class A,B,G,H,I,J date
-</div>
-
-<p>In short, the <code>Alltest</code> script runs all unit tests found in
-<a href="https://github.com/FoamScience/foamUT/tree/master/tests"><code>tests</code></a> directory on
-all OpenFOAM cases found in
-<a href="https://github.com/FoamScience/foamUT/tree/master/cases"><code>cases</code></a> directory.
-So, to run your own tests:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="c1"># Clone the repos</span>
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> /tmp
-</span></span><span class="line"><span class="cl">git clone https://github.com/FoamScience/foamUT foamUT
-</span></span><span class="line"><span class="cl">git clone &lt;Exercise-repo-URL&gt; Ex01
-</span></span><span class="line"><span class="cl"><span class="c1"># Replace sample tests with the exercise code</span>
-</span></span><span class="line"><span class="cl"><span class="nb">cd</span> foamUT
-</span></span><span class="line"><span class="cl">rm -rf tests/exampleTests
-</span></span><span class="line"><span class="cl">ln -s <span class="nv">$PWD</span>/../Ex01/exercises <span class="nv">$PWD</span>/tests/ex01
-</span></span><span class="line"><span class="cl"><span class="c1"># Compile and run tests</span>
-</span></span><span class="line"><span class="cl">./Alltest
-</span></span></code></pre></div><details>
-  <summary>Important notes about using foamUT</summary>
-  <ul>
-<li>If you want to see FATAL ERRORS (As if running a regular solver), put <code>Foam::FatalError.dontThrowExceptions();</code> at the start of the test case.</li>
-<li>Your code is supposed to work (all tests pass) both in serial and in parallel.</li>
-<li>The unit tests are timed-out in <code>Alltest</code> (change <a href="https://github.com/FoamScience/foamUT/blob/4b9da1eba5713c7e74e5b553a79614ed7e1c7d91/Alltest#L30"><code>timeOut</code></a> if it&rsquo;s too quick for you).</li>
-<li>The unit tests run in <code>/dev/shm</code> by default; you can change this in <a href="https://github.com/FoamScience/foamUT/blob/4b9da1eba5713c7e74e5b553a79614ed7e1c7d91/Alltest#L28"><code>Alltest</code></a></li>
-<li>All cases run on 4 processors but tests may run on specific processors only.</li>
-</ul>
-</details>
-
-<p>If your machine has less than 4 CPUs, you need to enable MPI oversubscribing; otherwise your parallel tests will fail
-(This is useful for example if you&rsquo;re using Github codespaces or running CI jobs on Github machines which only have 2 CPUs):</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl">sed -i <span class="s1">&#39;s/mpirun/mpirun --oversubscribe/g&#39;</span> Alltest
-</span></span></code></pre></div><div class="alert alert-doks d-flex" role="alert">
+			<p>In this optional section, we&rsquo;ll explore the use of GPUs with OpenFOAM and OpenMP.</p>
+<div class="card-bar"></div><br>
+<div class="alert alert-warning d-flex" role="alert">
   <div class="flex-shrink-1 alert-icon">👉 </div>
   
     
-      <div class="w-100"> Head out to <a href="https://github.com/FoamScience/foamUT/wiki">the wiki page</a> if you&rsquo;re interested in the Unit-testing framework.</div>
+      <div class="w-100"> This article is incomplete, and it only supports NVIDIA GPUs.</div>
     
   
 </div>
 
-<hr>
-<p>At this point, only one task remains:</p>
-<ol start="0">
-<li><input checked="" disabled="" type="checkbox"> Register to the <a href="https://eveeno.com/parallelization_in_openfoam">Workshop&rsquo;s event</a></li>
-<li><input checked="" disabled="" type="checkbox"> Set up a Text Editor or an IDE for OpenFOAM development.</li>
-<li><input checked="" disabled="" type="checkbox"> Have a working OpenFOAM installation.</li>
-<li><input checked="" disabled="" type="checkbox"> Clone our unit-testing framework and make sure it works for you.</li>
-<li><input disabled="" type="checkbox"> Solve a demo exercise so you get familiarized with the typical workflow during the hands-on sessions (You&rsquo;ll need no knowledge from the workshop for this).</li>
+<h2 id="base-benchmarks">Base benchmarks <a href="#base-benchmarks" class="anchor" aria-hidden="true">#</a></h2>
+<p>The <a href="https://github.com/FoamScience/OpenMP-OpenFOAM-benchmarks">OpenMP-OpenFOAM-benchmarks</a> repository provides a set of quick benchmarks
+to showcase the possible benefits of using OpenMP constructs on OpenFOAM loops. The test case is a simple computation pattern
+that is popular in meshless methods where a kernel function is usually used as a weight for a set of sample points to approximate a
+target value at a particular position.</p>
+<p>The benchmarks feature the following speedups on Github machines (You can always consult reports from CI jobs for updated information):</p>
+<pre tabindex="0"><code>benchmark name                       samples       iterations    estimated
+                                     mean          low mean      high mean
+                                     std dev       low std dev   high std dev
+-------------------------------------------------------------------------------
+
+Original looping                               100             1    856.051 ms
+                                        8.60526 ms    8.58056 ms    8.63656 ms
+                                        141.078 us    116.117 us    201.586 us
+
+CPU openMP looping                             100             1    471.849 ms
+                                        4.72523 ms    4.70228 ms    4.77649 ms
+                                        166.204 us    94.5203 us     334.01 us
+</code></pre><p>The performance benefits of adding <code>#pragma omp parallel for</code> (check the difference of implementing <a href="https://github.com/FoamScience/OpenMP-OpenFOAM-benchmarks/blob/5945d5aa564b38e63354d0b4347cc8e4cfa52b94/openmpTests.C#L37">openMPLoop()</a> and <a href="https://github.com/FoamScience/OpenMP-OpenFOAM-benchmarks/blob/5945d5aa564b38e63354d0b4347cc8e4cfa52b94/openmpTests.C#L19">originalLoop()</a>) come basically for <strong>free</strong>. All you have to do is</p>
+<p>Github machines provide no accelerators, so the code that is supposed to run on the GPU will just run on the CPU.</p>
+<p>A few tasks are left to the reader:</p>
+<ol>
+<li>Try to run the benchmarks locally and evaluate how good the GPU offloading is on your system.</li>
+<li>Add <code>-O0</code> to <a href="https://github.com/FoamScience/OpenMP-OpenFOAM-benchmarks/blob/5945d5aa564b38e63354d0b4347cc8e4cfa52b94/Make/options#L2">Make/options</a> to disable filling of compile-time values and observe the difference in speedup.</li>
+<li>Adapt <a href="https://github.com/FoamScience/OpenMP-OpenFOAM-benchmarks/blob/main/openmpTests.C">openmpTests.C</a> to work for vector operations too.</li>
+<li>Increase <a href="https://github.com/FoamScience/OpenMP-OpenFOAM-benchmarks/blob/5945d5aa564b38e63354d0b4347cc8e4cfa52b94/openmpTests.C#L15">the number of field elements</a> (maybe by 10x fold) and see what happens!</li>
 </ol>
 
 			<div class="page-footer-meta d-flex flex-column flex-md-row justify-content-between">
@@ -910,17 +901,17 @@ So, to run your own tests:</p>
 				</div>
 			<div class="docs-navigation d-flex justify-content-between">
 	
-	<a href="/workshop/hands-on/openfoam-in-containers/">
+	<a href="/workshop/hands-on/run-on-the-slurm-cluster/">
 			<div class="card my-1">
 				<div class="card-body py-2">
-					&larr; OpenFOAM in containers
+					&larr; Run tests on a SLURM cluster
 				</div>
 			</div>
 		</a>
-	<a class="ms-auto" href="/workshop/hands-on/github-classroom/">
+	<a class="ms-auto" href="/workshop/help/get-help/">
 			<div class="card my-1">
 				<div class="card-body py-2">
-					Github classroom for the exercises &rarr;
+					How to get help &rarr;
 				</div>
 			</div>
 		</a>
