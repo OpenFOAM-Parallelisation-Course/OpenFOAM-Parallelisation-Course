@@ -114,7 +114,7 @@ Head out to [the wiki page](https://github.com/FoamScience/foamUT/wiki) if you'r
 
 At this point, only one task remains:
 
-0. [x] Register to the [Workshop's event](https://eveeno.com/parallelization_in_openfoam_)
+0. [x] Register to the [Workshop's event](https://eveeno.com/parainopenfoam240403)
 1. [x] Set up a Text Editor or an IDE for OpenFOAM development.
 2. [x] Have a working OpenFOAM installation.
 2. [x] Clone our unit-testing framework and make sure it works for you.

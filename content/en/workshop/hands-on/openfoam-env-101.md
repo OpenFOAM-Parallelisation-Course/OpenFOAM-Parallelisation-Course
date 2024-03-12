@@ -37,7 +37,7 @@ If your main OS is Windows, you have a couple of options (Again, choose whatever
 
 In order to optimize your experience during the hands-on sessions, I ask you to go through a quick pre-flight checklist:
 
-0. [x] Register to the [Workshop's event](https://eveeno.com/parallelization_in_openfoam_).
+0. [x] Register to the [Workshop's event](https://eveeno.com/parainopenfoam240403).
 1. [x] Set up a Text Editor or an IDE for OpenFOAM development.
 2. [ ] Have a working OpenFOAM installation.
 2. [ ] Clone our unit-testing framework and make sure it works for you.

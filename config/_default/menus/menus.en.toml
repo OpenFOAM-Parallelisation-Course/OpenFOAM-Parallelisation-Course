@@ -54,7 +54,7 @@
   name = "Register"
   weight = 4
   identifier = "register"
-  url = "https://eveeno.com/parallelization_in_openfoam_"
+  url = "https://eveeno.com/parainopenfoam240403"
 
 [[main]]
   name = "Hands-on sessions"

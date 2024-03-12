@@ -23,7 +23,7 @@ toc: true
 
 ---
 
-- Once you register at [eveeno.com](https://eveeno.com/parallelization_in_openfoam_) for the workshop's event,
+- Once you register at [eveeno.com](https://eveeno.com/parainopenfoam240403) for the workshop's event,
   you can use the communication facilities there to contact instructors.
 
 ---
