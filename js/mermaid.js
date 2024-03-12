@@ -9384,7 +9384,7 @@
 
   // node_modules/lodash-es/_baseCreate.js
   var objectCreate = Object.create;
-  var baseCreate = function() {
+  var baseCreate = /* @__PURE__ */ function() {
     function object() {
     }
     return function(proto) {
@@ -9703,7 +9703,7 @@
   var objectProto8 = Object.prototype;
   var hasOwnProperty6 = objectProto8.hasOwnProperty;
   var propertyIsEnumerable = objectProto8.propertyIsEnumerable;
-  var isArguments = baseIsArguments_default(function() {
+  var isArguments = baseIsArguments_default(/* @__PURE__ */ function() {
     return arguments;
   }()) ? baseIsArguments_default : function(value) {
     return isObjectLike_default(value) && hasOwnProperty6.call(value, "callee") && !propertyIsEnumerable.call(value, "callee");
@@ -21513,7 +21513,7 @@ g.stateGroup line {
         return true;
       }
     };
-    var lexer = function() {
+    var lexer = /* @__PURE__ */ function() {
       var lexer2 = {
         EOF: 1,
         parseError: function parseError(str2, hash) {
@@ -23080,7 +23080,7 @@ g.stateGroup line {
         return true;
       }
     };
-    var lexer = function() {
+    var lexer = /* @__PURE__ */ function() {
       var lexer2 = {
         EOF: 1,
         parseError: function parseError(str2, hash) {
@@ -24656,7 +24656,7 @@ g.stateGroup line {
       fontWeight: cnf[typeC4Shape + "FontWeight"]
     };
   };
-  var _drawTextCandidateFunc$2 = function() {
+  var _drawTextCandidateFunc$2 = /* @__PURE__ */ function() {
     function byText(content, g, x2, y2, width22, height2, textAttrs) {
       const text = g.append("text").attr("x", x2 + width22 / 2).attr("y", y2 + height2 / 2 + 5).style("text-anchor", "middle").text(content);
       _setTextAttrs(text, textAttrs);
@@ -25531,7 +25531,7 @@ g.stateGroup line {
         return true;
       }
     };
-    var lexer = function() {
+    var lexer = /* @__PURE__ */ function() {
       var lexer2 = {
         EOF: 1,
         parseError: function parseError(str2, hash) {
@@ -29218,7 +29218,7 @@ g.stateGroup line {
         return true;
       }
     };
-    var lexer = function() {
+    var lexer = /* @__PURE__ */ function() {
       var lexer2 = {
         EOF: 1,
         parseError: function parseError(str2, hash) {
@@ -30494,7 +30494,7 @@ g.stateGroup line {
         return true;
       }
     };
-    var lexer = function() {
+    var lexer = /* @__PURE__ */ function() {
       var lexer2 = {
         EOF: 1,
         parseError: function parseError(str2, hash) {
@@ -32845,7 +32845,7 @@ g.stateGroup line {
         return true;
       }
     };
-    var lexer = function() {
+    var lexer = /* @__PURE__ */ function() {
       var lexer2 = {
         EOF: 1,
         parseError: function parseError(str2, hash) {
@@ -34369,7 +34369,7 @@ g.stateGroup line {
         return true;
       }
     };
-    var lexer = function() {
+    var lexer = /* @__PURE__ */ function() {
       var lexer2 = {
         EOF: 1,
         parseError: function parseError(str2, hash) {
@@ -34907,7 +34907,7 @@ g.stateGroup line {
         return true;
       }
     };
-    var lexer = function() {
+    var lexer = /* @__PURE__ */ function() {
       var lexer2 = {
         EOF: 1,
         parseError: function parseError(str2, hash) {
@@ -35685,7 +35685,7 @@ g.stateGroup line {
         return true;
       }
     };
-    var lexer = function() {
+    var lexer = /* @__PURE__ */ function() {
       var lexer2 = {
         EOF: 1,
         parseError: function parseError(str2, hash) {
@@ -36830,7 +36830,7 @@ g.stateGroup line {
         return true;
       }
     };
-    var lexer = function() {
+    var lexer = /* @__PURE__ */ function() {
       var lexer2 = {
         EOF: 1,
         parseError: function parseError(str2, hash) {
@@ -38191,7 +38191,7 @@ g.stateGroup line {
       ry: 0
     };
   };
-  var _drawTextCandidateFunc$1 = function() {
+  var _drawTextCandidateFunc$1 = /* @__PURE__ */ function() {
     function byText(content, g, x2, y2, width22, height2, textAttrs) {
       const text = g.append("text").attr("x", x2 + width22 / 2).attr("y", y2 + height2 / 2 + 5).style("text-anchor", "middle").text(content);
       _setTextAttrs(text, textAttrs);
@@ -38227,7 +38227,7 @@ g.stateGroup line {
       return conf2.textPlacement === "fo" ? byFo : conf2.textPlacement === "old" ? byText : byTspan;
     };
   }();
-  var _drawMenuItemTextCandidateFunc = function() {
+  var _drawMenuItemTextCandidateFunc = /* @__PURE__ */ function() {
     function byText(content, g, x2, y2, width22, height2, textAttrs) {
       const text = g.append("text").attr("x", x2).attr("y", y2).style("text-anchor", "start").text(content);
       _setTextAttrs(text, textAttrs);
@@ -39564,7 +39564,7 @@ g.stateGroup line {
         return true;
       }
     };
-    var lexer = function() {
+    var lexer = /* @__PURE__ */ function() {
       var lexer2 = {
         EOF: 1,
         parseError: function parseError(str2, hash) {
@@ -41414,7 +41414,7 @@ g.stateGroup line {
         return true;
       }
     };
-    var lexer = function() {
+    var lexer = /* @__PURE__ */ function() {
       var lexer2 = {
         EOF: 1,
         parseError: function parseError(str2, hash) {
@@ -42055,7 +42055,7 @@ g.stateGroup line {
       ry: 0
     };
   };
-  var _drawTextCandidateFunc = function() {
+  var _drawTextCandidateFunc = /* @__PURE__ */ function() {
     function byText(content, g, x2, y2, width22, height2, textAttrs, colour) {
       const text = g.append("text").attr("x", x2 + width22 / 2).attr("y", y2 + height2 / 2 + 5).style("font-color", colour).style("text-anchor", "middle").text(content);
       _setTextAttrs(text, textAttrs);
