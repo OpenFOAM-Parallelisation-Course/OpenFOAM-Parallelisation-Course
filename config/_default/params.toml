@@ -68,7 +68,7 @@ fillImage = "1270x740 Center" # normalize image size
 footer = "Supported by <a href='https://nhr4ces.de'>NHR4CES</a> - SDL Energy Conversion <br> Cookies are not used to collect anything. Lectures were recorded using <a href='https://github.com/lectureStudio/lectureStudio'>lectureStudio</a> <br> Copyright (c) 2022-2023 Mohammed Elwardi Fadeli, based on <a href='https://getdoks.org/'>doks</a> with <a href='https://gohugo.io/'>Hugo</a>"
 
 # Feed
-copyRight = "Copyright (c) 2022-2023 Mohammed Elwardi Fadeli"
+copyRight = "Copyright (c) 2022-2024 Mohammed Elwardi Fadeli"
 
 # Alert
 alert = true
