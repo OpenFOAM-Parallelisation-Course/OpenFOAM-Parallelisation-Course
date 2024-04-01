@@ -85,3 +85,9 @@ wrong with the code and fix it in your own way!
 
 Note that this is a group project, up to 3 people can collaborate to work on this thing.
 {{< /assignment-card >}}
+
+{{< assignment-card "Project 02: MPI code profiling for load-balancing" "https://classroom.github.com/a/hjr8ZEjB" >}}
+Venture into raw MPI calls. Your task is to figure out how to measure time spent on communication in whole CFD simulations!
+
+You can even count how many MPI calls were made!
+{{< /assignment-card >}}
